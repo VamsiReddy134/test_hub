@@ -1,0 +1,18 @@
+USE [Northwind]
+GO
+
+/****** Object:  UserDefinedFunction [dbo].[select_table]    Script Date: 03-11-2022 12:37:25 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+create function [dbo].[select_table]()
+returns table
+as
+return
+(select *from dbo.Orders)
+GO
+
+
